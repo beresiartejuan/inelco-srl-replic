@@ -1,0 +1,86 @@
+.about-us {
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 10vh 0;
+
+}
+
+.about-us .card {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.about-us .card div {
+
+    width: 25%;
+    max-width: 25%;
+    padding: 3vh 2vw;
+    background-color: rgba(0, 0, 0, .3);
+    font-family: 'Arimo', sans-serif;
+    box-shadow: #000 4px 4px 4px;
+
+}
+
+.about-us .card div p {
+
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 3vh;
+
+}
+
+.about-us .card div h3 {
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    border-bottom: solid #aa232f 1vh;
+
+}
+
+.about-us .card div:last-child {
+
+    background: url('/big-machine.png') no-repeat center fixed;
+    background-size: contain;
+    min-height: max-content;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .about-us {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        padding: 10vh 0;
+
+    }
+
+    .about-us .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-us .card div {
+
+        width: 80%;
+        max-width: 80%;
+        padding: 3vh 6vw;
+        background-color: rgba(0, 0, 0, .3);
+        font-family: 'Arimo', sans-serif;
+        box-shadow: #000 5px 5px 4px;
+        margin: 0 auto;
+
+    }
+
+    .about-us .card div:last-child {
+        background-size: initial;
+        min-height: 30vh;
+    }
+}

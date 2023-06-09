@@ -1,0 +1,75 @@
+.services {
+    background-color: rgba(0, 0, 0, .8);
+
+    padding: 10vh 1vw;
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.services h3 {
+    color: rgba(255, 255, 255, .8);
+    font-family: 'Arimo', sans-serif;
+    font-size: 3rem;
+
+    margin: 0;
+    margin-bottom: 8vh;
+    padding: 0 2vw 1vh 2vw;
+    border-bottom: solid #aa232f 1vh;
+
+    text-transform: uppercase;
+}
+
+.services .container {
+    display: grid;
+    gap: 1.2rem;
+    max-width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.services .container .service {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+
+    box-shadow: transparent 0px 0px 0px;
+
+    transition: box-shadow .3s;
+
+    border-radius: 12px;
+}
+
+.services .container .service:hover {
+    box-shadow: #fff 0px 0px 10px 5px;
+}
+
+.services .container .service img {
+    display: inline-block;
+    max-width: 100%;
+    z-index: 0;
+}
+
+.services .container .service span {
+    display: inline-block;
+    font-family: Arial;
+    font-weight: 200;
+    padding: 1vh 0;
+
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, .8);
+}
+
+@media screen and (max-width: 1000px) {
+
+    .services .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
