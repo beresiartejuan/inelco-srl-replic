@@ -5,8 +5,6 @@ import "./styles/app.css";
 import AboutUs from "./sections/AboutUs";
 import Services from "./sections/Services";
 
-import { useEffect } from "react";
-
 function App() {
 
     /** NOTE: Terminar esta funcionalidad 
