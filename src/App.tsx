@@ -9,6 +9,7 @@ import { useEffect } from "react";
 
 function App() {
 
+    /** NOTE: Terminar esta funcionalidad 
     useEffect(() => {
 
         const clickDownEvent = () => {
@@ -21,7 +22,7 @@ function App() {
             document.querySelector(".down")?.removeEventListener("click", clickDownEvent);
         }
 
-    });
+    });*/
 
     return (
         <>
